@@ -1,0 +1,240 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("./fonts/roboto-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.fg-1 {
+  flex-grow: 1;
+}
+
+.g-16 {
+  gap: 16px;
+}
+
+.g-24 {
+  gap: 24px;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-sticky {
+  position: sticky;
+}
+
+.ta-justify {
+  text-align: justify;
+}
+
+.ta-center {
+  text-align: center;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.c-grey {
+  color: #808080;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.c-black {
+  color: #000;
+}
+
+.jc-space-between {
+  justify-content: space-between;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-red {
+  background-color: #f00;
+}
+
+.bg-ghostwhite {
+  background-color: #f9f9f9;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.m-y-12 {
+  margin: 12px 0;
+}
+
+.p-y-4 {
+  padding: 4px 0;
+}
+
+.p-x-8 {
+  padding: 0 8px;
+}
+
+.bands img {
+  border-radius: 4px;
+}
+
+.tickets-list {
+  & li {
+    padding: 10px 16px;
+    & + li {
+      border-top: 1px solid #d3d3d3;
+    }
+  }
+}
+
+.count {
+  padding: 0 8px;
+  border-radius: 50%;
+}
+
+.card {
+  & img:hover {
+    opacity: 0.5;
+  }
+  & figcaption {
+    padding: 0 16px;
+  }
+}
+
+.home figcaption {
+  bottom: 48px;
+  width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search:hover {
+  background-color: #f00;
+}
+
+:is(a, a:hover) {
+  text-decoration: none;
+}
+
+:is(h1, h2, h3, h4, h5, h6, p) {
+  margin: 12px 0;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  padding: 12px 8px;
+  border: 1px solid #d3d3d3;
+}
+
+button {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 0;
+  min-width: 80px;
+  &:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+  }
+}
+
+form button {
+  align-self: end;
+}
+
+header {
+  top: 0;
+  z-index: 1;
+  & a {
+    padding: 12px 24px;
+  }
+}
+
+nav {
+  & a {
+    display: block;
+    &:hover {
+      background-color: #d3d3d3;
+      color: #000;
+    }
+  }
+}
+
+article {
+  & > div {
+    margin: 0 auto;
+    padding: 88px 8px;
+    max-width: 856px;
+
+    & > div {
+      margin: 32px 0;
+    }
+  }
+}
+
+footer {
+  padding: 64px 16px;
+
+  & a {
+    &.c-grey {
+      text-decoration: underline;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
